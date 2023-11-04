@@ -1,3 +1,2 @@
 # piscine-c
-
-<img src="img/piscine-c-map.png">
+<img src="../img/piscine-c-map.png">
