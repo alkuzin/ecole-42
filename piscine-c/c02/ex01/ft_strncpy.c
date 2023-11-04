@@ -10,25 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char *str);
 char *ft_strncpy(char *dest, char *src, unsigned int n);
-
-int ft_strlen(char *str)
-{
-    int len;
-
-    len = -1;
-    while(str[++len])
-        continue;
-    return len;
-}
 
 char *ft_strncpy(char *dest, char *src, unsigned int n)
 {
     int i;
     
-    i = 0;
-    while(src[i++] && i < n)
+    i = -1;
+    while(src[++i] && i < n)
     {
         dest[i] = src[i];
     }
