@@ -6,7 +6,7 @@
 /*   By: alkuzin <[null]@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 18:26:29 by alkuzin           #+#    #+#             */
-/*   Updated: 2023/11/12 19:30:20 by alkuzin          ###   ########.fr       */
+/*   Updated: 2023/11/12 19:45:37 by alkuzin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,15 +14,15 @@
 
 #define NULL ((void *)0)
 
-int ft_wordlen(char *str, char *charset);
+static int ft_wordlen(char *str, char *charset);
 
-int ft_wordcount(char *str, char *charset);
+static int ft_wordcount(char *str, char *charset);
 
-int ft_is_space(char to_find, char *str);
+static int ft_is_space(char to_find, char *str);
 
 char **ft_split(char *str, char *charset);
 
-int ft_wordlen(char *str, char *charset)
+static int ft_wordlen(char *str, char *charset)
 {
     int len;
     
@@ -38,7 +38,7 @@ int ft_wordlen(char *str, char *charset)
     return len;
 }
 
-int ft_wordcount(char *str, char *charset)
+static int ft_wordcount(char *str, char *charset)
 {
     int count;
 
@@ -57,7 +57,7 @@ int ft_wordcount(char *str, char *charset)
     return count;
 }
 
-int ft_is_space(char to_find, char *str)
+static int ft_is_space(char to_find, char *str)
 {
     while(*str)
     {
@@ -82,7 +82,6 @@ char **ft_split(char *str, char *charset)
     if(!str || strs == NULL)
         return NULL;
     i = 0;
-    // word_length = ft_wordlen(str, charset);
     while(i < word_count)
     {
         strs[i] = (char *)malloc(sizeof(char) * (ft_wordlen(str, charset) + 1));
