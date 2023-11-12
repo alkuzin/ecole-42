@@ -6,7 +6,7 @@
 /*   By: alkuzin <[null]@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 18:26:29 by alkuzin           #+#    #+#             */
-/*   Updated: 2023/11/12 19:45:37 by alkuzin          ###   ########.fr       */
+/*   Updated: 2023/11/12 19:47:15 by alkuzin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,14 +70,11 @@ static int ft_is_space(char to_find, char *str)
 char **ft_split(char *str, char *charset)
 {
     int i, j;
-    int state; /*0 - if not in charset, 1 - if in charset*/
     char **strs;
     int word_count;
     int word_length;
 
     word_count = ft_wordcount(str, charset);
-    state = 0;
-    
     strs = (char **)malloc(sizeof(char*) * (word_count + 1));
     if(!str || strs == NULL)
         return NULL;
