@@ -1,21 +1,18 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -Wno-implicit-function-declaration
 
-SRC_PATH=libft/
 FT_STDIO_PATH=stdio/
+FT_CTYPE_PATH=ctype/
 
-final: ft_putchar.o ft_puts.o ft_putstr.o
-	ar rcs libft.a ft_putchar.o ft_puts.o ft_putstr.o
+FINAL_OBJS = $(FT_STDIO_PATH)stdio.o $(FT_CTYPE_PATH)ctype.o
 
-ft_putchar.o: $(FT_STDIO_PATH)ft_putchar.c
-	$(CC) $(CFLAGS) -c $(FT_STDIO_PATH)ft_putchar.c
+final: $(FINAL_OBJS)
+	ar rcs libft.a $(FINAL_OBJS)
 
-ft_puts.o: $(FT_STDIO_PATH)ft_puts.c
-	$(CC) $(CFLAGS) -c $(FT_STDIO_PATH)ft_puts.c
-
-ft_putstr.o: $(FT_STDIO_PATH)ft_putstr.c
-	$(CC) $(CFLAGS) -c $(FT_STDIO_PATH)ft_putstr.c
+all:
+	cd $(FT_STDIO_PATH) && $(MAKE)
+	cd $(FT_CTYPE_PATH) && $(MAKE)
 
 clean:
 	@echo "(*) Removing extra files"
-	rm ft_putchar.o ft_puts.o ft_putstr.o
+	rm $(FINAL_OBJS)
