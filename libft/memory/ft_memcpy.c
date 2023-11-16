@@ -6,11 +6,11 @@
 /*   By: alkuzin <[null]@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 16:16:03 by alkuzin           #+#    #+#             */
-/*   Updated: 2023/11/16 17:39:17 by alkuzin          ###   ########.fr       */
+/*   Updated: 2023/11/16 18:50:35 by alkuzin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_string.h"
+#include "ft_memory.h"
 
 void *ft_memcpy(void *dest, const void *src, t_size n)
 {
