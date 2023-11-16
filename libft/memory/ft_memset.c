@@ -12,7 +12,7 @@
 
 #include "ft_memory.h"
 
-void *ft_memset(void *s, int c, t_size n)
+void *ft_memset(void *s, int c, size_t n)
 {
     unsigned char *src;
     unsigned char cc;
@@ -21,6 +21,7 @@ void *ft_memset(void *s, int c, t_size n)
 
     src = (unsigned char *)s;
     cc = (unsigned char)c;
+    
     i = 0;
     while(src[i] && n > 0)
     {
