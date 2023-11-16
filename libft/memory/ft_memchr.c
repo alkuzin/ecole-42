@@ -6,11 +6,11 @@
 /*   By: alkuzin <[null]@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 18:04:59 by alkuzin           #+#    #+#             */
-/*   Updated: 2023/11/16 18:20:50 by alkuzin          ###   ########.fr       */
+/*   Updated: 2023/11/16 18:50:14 by alkuzin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_string.h"
+#include "ft_memory.h"
 
 void *ft_memchr(const void *s, int c, t_size n)
 {
