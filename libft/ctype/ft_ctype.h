@@ -6,7 +6,7 @@
 /*   By: alkuzin <[null]@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 19:54:38 by alkuzin           #+#    #+#             */
-/*   Updated: 2023/11/15 20:25:32 by alkuzin          ###   ########.fr       */
+/*   Updated: 2023/11/16 18:21:38 by alkuzin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ extern int ft_tolower(int c);
 /* Checks for an uppercase character */
 extern int ft_isupper(int c);
 
-/* Checks for an lowercase character */
+/* Checks for a lowercase character */
 extern int ft_islower(int c);
 
 #endif /* FT_CTYPE_H */
