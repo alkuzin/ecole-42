@@ -12,18 +12,18 @@
 
 #include "ft_memory.h"
 
-void *ft_memccpy(void *dest, const void *src, int c, t_size n)
+void *ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
     unsigned char *cdest;
     const unsigned char *csrc;
     unsigned char cc;
-    t_size i;
+    size_t i;
 
     cdest = (unsigned char *)dest;
     csrc = (const unsigned char *)src;
     cc = (unsigned char)c;
+    
     i = 0;
-
     while(i < n)
     {
         cdest[i] = csrc[i];
