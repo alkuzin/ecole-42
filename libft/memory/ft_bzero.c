@@ -12,7 +12,7 @@
 
 #include "ft_memory.h"
 
-void ft_bzero(void *s, t_size n)
+void ft_bzero(void *s, size_t n)
 {
     unsigned char *src;
     int i;
