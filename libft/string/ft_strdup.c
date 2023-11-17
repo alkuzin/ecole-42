@@ -6,7 +6,7 @@
 /*   By: alkuzin <[null]@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 18:47:59 by alkuzin           #+#    #+#             */
-/*   Updated: 2023/11/17 18:48:52 by alkuzin          ###   ########.fr       */
+/*   Updated: 2023/11/17 19:25:30 by alkuzin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,7 @@ char *ft_strdup(char *src)
     length = ft_strlen(src);
     str = (char *)malloc(sizeof(char *) * length);
 
+    i = 0;
     while(src[i])
     {
         str[i] = src[i];
