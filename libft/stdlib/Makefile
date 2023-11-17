@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra -Werror -Wno-implicit-function-declaration
 
 OBJS = ft_atoi.o   \
-	   ft_range.o  \	
+	   ft_range.o  	
 
 FINAL_OBJ = stdlib.o
 
