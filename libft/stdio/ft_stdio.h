@@ -13,9 +13,7 @@
 #ifndef FT_STDIO_H
 #define FT_STDIO_H
 
-#include <unistd.h>
-#include <fcntl.h>
-
+#include "../libft.h"
 
 /* Print character */
 extern void ft_putchar(char c);
