@@ -6,7 +6,7 @@
 /*   By: alkuzin <[null]@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 16:22:17 by alkuzin           #+#    #+#             */
-/*   Updated: 2023/11/17 17:15:18 by alkuzin          ###   ########.fr       */
+/*   Updated: 2023/11/17 19:23:49 by alkuzin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ size_t ft_strlcat(char *dest, const char *src, size_t size)
     dest_len = ft_strlen(dest);
     src_len = ft_strlen(src);
 
-    if(size <= src_len)
+    if(size <= (size_t)src_len)
         return (size + src_len);
     
     i = 0;
