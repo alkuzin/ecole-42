@@ -13,6 +13,8 @@
 #ifndef FT_CTYPE_H
 #define FT_CTYPE_H
 
+#include "../libft.h"
+
 /* Checks for an alphabetic character */
 extern int ft_isalpha(int c);
 
