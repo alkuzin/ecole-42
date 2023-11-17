@@ -6,7 +6,7 @@
 /*   By: alkuzin <[null]@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 17:47:30 by alkuzin           #+#    #+#             */
-/*   Updated: 2023/11/17 18:12:43 by alkuzin          ###   ########.fr       */
+/*   Updated: 2023/11/17 19:24:29 by alkuzin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ char *ft_strnstr(const char *big, const char *little, size_t len)
                 j++;
             }
 
-            if(j == little_len)
+            if(j == (size_t)little_len)
                 return ((char *)big + i);
         }
         i++;
