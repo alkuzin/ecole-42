@@ -6,7 +6,7 @@
 /*   By: alkuzin <[null]@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 15:47:39 by alkuzin           #+#    #+#             */
-/*   Updated: 2023/11/17 18:18:29 by alkuzin          ###   ########.fr       */
+/*   Updated: 2023/11/17 18:52:27 by alkuzin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,18 @@ char *ft_strrchr(const char *s, int c);
 char *ft_strnstr(const char *big, const char *little, size_t len);
 
 /* The ft_strcmp() compares the two strings s1 and s2. */
-int ft_strncmp(char *s1, char *s2, size_t n)
+int ft_strncmp(char *s1, char *s2, size_t n);
+
+/* The ft_split() returns an array of strings obtained by splitting ’s’
+ * using the character ’c’ as a delimiter.*/
+char **ft_split(char *str, char *charset);
+
+/* The ft_strdup() returns a pointer to a new string 
+ * which is a duplicate of the string s. */
+char *ft_strdup(char *src);
+
+/* The ft_strjoin() returns a new string, which is 
+ * the result of the concatenation of ’s1’ and ’s2’. */
+char *ft_strjoin(int size, char **strs, char *sep);
 
 #endif /* FT_STRING_H */
