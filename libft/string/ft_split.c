@@ -6,7 +6,7 @@
 /*   By: alkuzin <[null]@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 18:41:10 by alkuzin           #+#    #+#             */
-/*   Updated: 2023/11/17 18:49:23 by alkuzin          ###   ########.fr       */
+/*   Updated: 2023/11/17 19:25:00 by alkuzin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,6 @@ char **ft_split(char *str, char *charset)
     int i, j;
     char **strs;
     int word_count;
-    int word_length;
 
     word_count = ft_wordcount(str, charset);
     strs = (char **)malloc(sizeof(char*) * (word_count + 1));
