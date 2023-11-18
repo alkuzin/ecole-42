@@ -6,7 +6,7 @@
 /*   By: alkuzin <[null]@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 15:48:55 by alkuzin           #+#    #+#             */
-/*   Updated: 2023/11/16 18:51:16 by alkuzin          ###   ########.fr       */
+/*   Updated: 2023/11/18 16:16:28 by alkuzin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,10 @@ void *ft_memset(void *s, int c, size_t n)
     cc = (unsigned char)c;
     
     i = 0;
-    while(src[i] && n > 0)
+    while(n--)
     {
         src[i] = cc;
         i++;
-        n--;
     }
 
     return s;
