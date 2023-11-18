@@ -6,7 +6,7 @@
 /*   By: alkuzin <[null]@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 18:37:49 by alkuzin           #+#    #+#             */
-/*   Updated: 2023/11/17 19:10:29 by alkuzin          ###   ########.fr       */
+/*   Updated: 2023/11/18 15:51:30 by alkuzin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,11 @@ int ft_atoi(char *str);
 /* The ft_range() returns the array of int 
  * from min including to max excluding. */
 int *ft_range(int min, int max);
+
+/* The ft_calloc() allocates memory for an 
+ * array of nmemb elements of size bytes each and 
+ * returns a pointer to the allocated memory.  
+ * The memory is set to zero. */
+void *ft_calloc(size_t nmemb, size_t size);
 
 #endif /* FT_STDLIB_H */
