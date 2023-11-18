@@ -6,7 +6,7 @@
 /*   By: alkuzin <[null]@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 15:47:39 by alkuzin           #+#    #+#             */
-/*   Updated: 2023/11/17 18:52:27 by alkuzin          ###   ########.fr       */
+/*   Updated: 2023/11/18 16:30:37 by alkuzin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,5 +51,9 @@ char *ft_strdup(char *src);
 /* The ft_strjoin() returns a new string, which is 
  * the result of the concatenation of ’s1’ and ’s2’. */
 char *ft_strjoin(int size, char **strs, char *sep);
+
+/* The ft_substr() returns a substring from the string ’s’.
+ * The substring begins at index ’start’ and is of maximum size ’len’ */
+char *ft_substr(char const *s, unsigned int start, size_t len);
 
 #endif /* FT_STRING_H */
