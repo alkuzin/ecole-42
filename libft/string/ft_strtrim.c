@@ -6,7 +6,7 @@
 /*   By: alkuzin <[null]@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 16:52:56 by alkuzin           #+#    #+#             */
-/*   Updated: 2023/11/18 17:27:01 by alkuzin          ###   ########.fr       */
+/*   Updated: 2023/11/18 19:10:48 by alkuzin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,6 @@ char *ft_strtrim(char const *s1, char const *set)
     end_pos = i;
     str = ft_substr(s1, start_pos, end_pos - start_pos + 1);
     
-    printf("st: %d\nend: %d\n", start_pos, end_pos);
-
     str[end_pos] = '\0';
     return str;
 }
