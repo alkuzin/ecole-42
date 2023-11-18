@@ -6,7 +6,7 @@
 /*   By: alkuzin <[null]@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 15:47:39 by alkuzin           #+#    #+#             */
-/*   Updated: 2023/11/18 16:30:37 by alkuzin          ###   ########.fr       */
+/*   Updated: 2023/11/18 16:52:44 by alkuzin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,5 +55,9 @@ char *ft_strjoin(int size, char **strs, char *sep);
 /* The ft_substr() returns a substring from the string ’s’.
  * The substring begins at index ’start’ and is of maximum size ’len’ */
 char *ft_substr(char const *s, unsigned int start, size_t len);
+
+/* The ft_strtrim() returns a copy of ’s1’ with the characters specified 
+ * in ’set’ removed from the beginning and the end of the string. */
+char *ft_strtrim(char const *s1, char const *set);
 
 #endif /* FT_STRING_H */
