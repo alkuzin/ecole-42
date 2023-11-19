@@ -6,13 +6,13 @@
 /*   By: alkuzin <[null]@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 18:47:59 by alkuzin           #+#    #+#             */
-/*   Updated: 2023/11/17 19:25:30 by alkuzin          ###   ########.fr       */
+/*   Updated: 2023/11/19 11:10:19 by alkuzin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_string.h"
 
-char *ft_strdup(char *src)
+char *ft_strdup(const char *src)
 {
     int i;
     char *str;
