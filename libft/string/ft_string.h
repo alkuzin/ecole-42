@@ -6,7 +6,7 @@
 /*   By: alkuzin <[null]@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/16 15:47:39 by alkuzin           #+#    #+#             */
-/*   Updated: 2023/11/18 17:32:34 by alkuzin          ###   ########.fr       */
+/*   Updated: 2023/11/19 11:10:01 by alkuzin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char **ft_split(char *str, char *charset);
 
 /* The ft_strdup() returns a pointer to a new string 
  * which is a duplicate of the string s. */
-char *ft_strdup(char *src);
+char *ft_strdup(const char *src);
 
 /* The ft_strjoin() returns a new string, which is 
  * the result of the concatenation of ’s1’ and ’s2’. */
@@ -63,5 +63,8 @@ char *ft_strtrim(char const *s1, char const *set);
 /* The ft_itoa() returns a string representing the 
  * integer received as an argument. */
 char *ft_itoa(int n);
+
+/* The ft_strmapi() applies the function ’f’ to each character of the string ’s’ */
+char *ft_strmapi(char const *s, int (*f)(int));
 
 #endif /* FT_STRING_H */
