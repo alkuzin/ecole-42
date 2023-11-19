@@ -6,7 +6,7 @@
 /*   By: alkuzin <[null]@student.42.fr>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/19 10:53:21 by alkuzin           #+#    #+#             */
-/*   Updated: 2023/11/19 11:11:12 by alkuzin          ###   ########.fr       */
+/*   Updated: 2023/11/19 12:09:30 by alkuzin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,6 @@
 char *ft_strmapi(char const *s, int (*f)(int))
 {
     char *str;
-    int length;
     unsigned int i;
 
     str = ft_strdup(s);
