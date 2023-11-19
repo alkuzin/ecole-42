@@ -13,7 +13,8 @@ OBJS = ft_strchr.o   \
 	   ft_strjoin.o  \
 	   ft_strtrim.o  \
 	   ft_substr.o   \
-	   ft_itoa.o
+	   ft_itoa.o	 \
+	   ft_strmapi.o
 
 FINAL_OBJ = string.o
 
@@ -59,6 +60,9 @@ ft_substr.o: ft_substr.c
 	
 ft_itoa.o: ft_itoa.c
 	$(CC) $(CFLAGS) -c ft_itoa.c
+
+ft_strmapi.o: ft_strmapi.c
+	$(CC) $(CFLAGS) -c ft_strmapi.c
 
 clean:
 	@echo "(*) Removing extra files"
